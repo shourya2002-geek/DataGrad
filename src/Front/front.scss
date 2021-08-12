@@ -1,0 +1,242 @@
+/* Import Pretty Checkboxes*/
+@import "https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css";
+/* Import Varela Round from Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+
+
+
+section{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);;
+  background-size: 400% 400%;
+  position: relative;
+  animation: animate 7.5s ease-in-out infinite;
+  display: flex;
+  padding: 80px;
+  align-items: center;
+  
+
+  .text{
+    height:80%;
+    width: 600px;
+    color: #fff;
+    background: rgba(255,255,255,.2);
+    border-radius: 10px;
+    font-family: 'Varela Round', sans-serif; 
+    font-weight: 800;
+    word-wrap: break-word;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-radius: 40px;
+    
+    .header{
+      font-size: 50px;
+      margin-bottom: 20px;
+  
+    }
+    
+    .content{
+      font-size: 22px;
+
+}
+
+}
+
+.icons{
+  
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Varela Round', sans-serif;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+  flex-grow: 3;
+  font-size: 30px;
+
+
+
+
+ 
+
+  .home{
+    color: #fff;
+    background: rgba(255,255,255,.2);
+    border-radius: 100px;
+    height: 180px;
+    width: 180px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    
+  }
+  .home:hover{
+    background-color: white;
+  } 
+    
+  .course{
+
+    color: #fff;
+    background: rgba(255,255,255,.2);
+    border-radius: 100px;
+    height: 180px;
+    width: 180px;
+    margin-right: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.course:hover{
+  background-color: white;
+} 
+
+.articles{
+
+  color: #fff;
+  background: rgba(255,255,255,.2);
+  border-radius: 100px;
+  height: 180px;
+  width: 180px;
+  margin-left: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.articles:hover{
+  background-color: white;
+} 
+
+
+
+
+
+}
+
+}
+@keyframes animate{
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+}
+
+
+
+
+
+
+.relative {
+  position: relative;
+}
+
+.loader-ring {
+  
+  border-radius: 100px;
+  height: 180px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8e8e8;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s linear;
+  box-shadow: 7px 7px 15px #bbcfda, -4px -4px 13px #ffffff,
+    inset 4px 4px 8px rgba(209, 217, 230, 0.35),
+    inset -8px -8px 8px rgba(255, 255, 255, 0.3);
+}
+
+.loader-ring-light {
+  border-radius: 100px;
+  height: 180px;
+  width: 180px;
+  box-shadow: 0 100px 0 #ffffff inset;
+  animation: rotate-360 2s linear infinite;
+}
+
+@keyframes rotate-360 {
+  0% {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+
+  .home{
+    display: none !important;
+  }
+  .course{
+    display: none !important;
+  }
+  .articles{
+    display: none !important;
+  }
+  
+
+  section{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+
+
+    .text{
+      font-size: 2em;
+      width: 100%;
+      height: 100%;
+
+
+
+
+      
+      
+    }
+    
+
+
+
+
+
+
+  }
+
+  
+
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+.input-field {
+    border: 0;
+    width: 300px;
+    border-radius: 5px;
+    height: 45px;
+    padding: 0.8rem 1.2rem;
+    margin: 0.3rem 0;
+    background-color: #f0f0f0;
+
+    .op{
+        font-size: 40px;
+    }
+}
+
+::-webkit-input-placeholder {font-size: 15px;} /* Chrome/Opera/Safari */
+::-moz-placeholder { color: pink;} /* Firefox 19+ */
+:-ms-input-placeholder { color: pink;} /* IE 10+ */
+:-moz-placeholder {color: pink;}  /* Firefox 18- */
