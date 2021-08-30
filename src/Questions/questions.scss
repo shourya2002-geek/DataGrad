@@ -13,30 +13,50 @@
 
 
 
-.wrapper {
+.front {
   
-  display: flex;
-  height: 100vh;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  align-items: center;
-  justify-content: center;
   color: var(--text-color);
   font-family: 'Varela Round', sans-serif; 
   font-size: 1.1rem;
   font-weight: bold;
-  background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-repeat: no-repeat; /* Don't repeat gradient in landscape mode on mobile phones*/
-  background-attachment: fixed;
-  
+  color: white;
+  position: "absolute";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
 
-    form {
+  .name{
+
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1315px) {
+
+  .navbar{
+      display: none;
+  }
+
+}
+  form {
+
+        
         display: block;
         border-radius: 12px;
-        padding: 10vh 10vw;
-        background: var(--formcolor);
+        padding: 5vh 10vw;
+        color: white;
         text-align: center;
-        box-shadow: 0px 0px 5px hsl(195, 50%, 98%);
+        
         
         
             .title {
@@ -45,17 +65,64 @@
                 border-bottom: 4px solid;
                 font-size: 3.1rem;
                 margin-bottom: 15px;
+                color: white;
             }
 
+            .outer{
+
+              display: flex;
+
+            .array{
+              width:50%;
+              padding: 10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              
+              
+              .logo{
+                width: 150px;
+                height: 150px;
+                background-image: url('../assets/alpha3new.png');
+                background-position: center;
+                background-size: 100% 100%;
+
+              }
+              
+
+              
+              
+              
+              
+            }
             .ips{
+
+              
+              
+              .signup-field {
                 
-            
-            .signup-field {
                 padding: 10px;
                 padding-left: 5px;
                 text-align: left;
+                color: black;
+
+
+                input{
+                  height: 38px;
+                  width: 300px;
+
+                  
+                }
+
+                .text{
+                  align-items: left;
+                  color: white;
+                  font-size: 23px;
+                }
 
             }
+
+            
             
             .input-field {
                 border: 0;
@@ -65,9 +132,12 @@
                 padding: 0.8rem 1.2rem;
                 margin: 0.3rem 0;
                 background-color: #f0f0f0;
+                color: black;
 
                 .op{
                     font-size: 40px;
+                    color: black;
+                    border-radius: 20px;
                 }
             }
             
@@ -75,10 +145,13 @@
                 display: block;
                 font-size: 23px;
                 margin-bottom: 8px;
+                color: white;
             }
 
             
         }
+      }
+      
 
                 input[type="submit"] {
                 font-family: inherit;
@@ -89,7 +162,7 @@
                 border: 2px outset var(--button-color);
                 border-radius: 10px;
                 cursor: pointer;
-                color: var(--text-color);
+                color: white;
                 background-color: transparent;
                 transition: all 0.2s ease-out;
             }
@@ -103,8 +176,16 @@
             
             
     }
+}
 
+@media only screen and (max-width: 1300px) {
+  .wrapper{
+    justify-content: space-evenly;
+  }
 
+      
+
+     
 }
 
 

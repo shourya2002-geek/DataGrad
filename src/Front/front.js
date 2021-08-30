@@ -1,34 +1,121 @@
 import React from 'react';
 import './front.scss';
+import ParticleComponent from '../Particles/particles';
+import { AiFillHeart } from 'react-icons/ai';
+import { RiAccountCircleFill } from 'react-icons/ri';
+import Sidebar from '../Sidebar/sidebar';
 
 
 
-const front = () => {
 
-    
+const Front = () => {
+
+
+
+
 
 
 
 
     return (
-        <div>
-            <section>
-                <div className="text">
 
-                <div className="header">CoursifyIt!</div>
-                <div className="content">Coursera Inc. is an American massive open online course provider founded in 2012 by Stanford University computer science professors Andrew Ng and Daphne Koller. Coursera works with universities and other organizations to offer online courses, certifications, and degrees in a variety of subjects. According to CNBC "more than 150 universities offered upwards of 4,000 courses through Coursera, which features over two dozen degree programs at prices that are lower than many in-person school offerings."</div>
+
+
+
+        <div
+            style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "200vh"
+            }}
+        >
+            <Sidebar />
+
+
+
+
+            <ParticleComponent />
+
+
+            <div
+                style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100vh",
+                    color: "white",
+
+                }}
+                className="front">
+
+
+                <div className="navbar">
+
+                    <a rel={'external'} href="/" ><div className="home">AlphaGrad</div></a>
+                    <div className="right">
+
+                        <a rel={'external'} href="/questions" ><div className="item">EXPLORE</div></a>
+
+
+                        <a rel={'external'} href="/contact" ><div className="item">CONTACT</div></a>
+                        <a rel={'external'} href="/team" ><div className="item">TEAM</div></a>
+
+
+
+
+
+                    </div>
+
 
                 </div>
-                <div className="icons">
+                <div className="content">
 
-                    <a rel={'external'} href="/"  className="home loader-ring"><div>Home</div></a>
+                </div>
 
 
-                    <a rel={'external'} href="/questions" className="course loader-ring"><div>Courses</div></a>
 
-                    <a rel={'external'} href="/articles" className="articles loader-ring"><div>Articles</div></a>
 
-                    
+
+
+            </div>
+
+
+
+            <div
+                style={{
+                    position: "absolute",
+
+                    width: "100%",
+                    height: "100vh",
+                    color: "white",
+
+                }}
+                className="us">
+
+                <div className="content1">
+
+                    <div className="aboutus">
+                        Our Vision
+                    </div>
+
+                    <div class="container">
+                        With the availability of numerous paid and free resources on the internet,
+                        it becomes overwhelming for students to learn new skills. AlphaGrad aims
+                        to bridge the gap between top MOOCs like Coursera, Udacity, EdX, medium
+                        article tutorials, and students eager to learn new skills. You only has to
+                        enter their level and the skill they want to learn, and AlphaGrad presents
+                        the Top 5 relevant courses and medium articles curated carefully, based on the skill and picked from
+                        various sites to them.
+                    </div>
+
+                    <div className="name">Made with <AiFillHeart /> by AlphaGrad</div>
+
+
+
+
                 </div>
 
 
@@ -38,20 +125,15 @@ const front = () => {
 
 
 
-            </section>
 
 
+
+
+
+            </div>
         </div>
 
-
-
-                
-
-
-                
-
-            
     )
 }
 
-export default front;
+export default Front;

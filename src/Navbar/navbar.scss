@@ -1,0 +1,68 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    font-family: 'Varela Round', sans-serif;
+    justify-content: space-evenly;
+    
+  
+    a{
+      color: white;
+      font-size: 20px;
+  
+    }
+    a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: green;
+      transition: width .3s;
+  }
+  
+    a:hover::after {
+      width: 100%;
+      
+  }
+  
+    .home{
+        
+        height: 33px;
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 26px;
+        
+        
+  
+    }
+    .home:hover{
+      font-weight: 1000;
+    }
+  
+    .right{
+        display: flex;
+        width: 310px;
+        justify-content: space-between;
+        align-items: center;
+        margin-left:64%;
+        
+  
+        .item{
+          cursor: pointer;
+          align-items: center;
+          justify-content: center;
+          height: 35px;
+  
+        }
+  
+        .item:hover{
+          font-weight: 1000;
+         
+  
+        }
+      }
+  
+  }

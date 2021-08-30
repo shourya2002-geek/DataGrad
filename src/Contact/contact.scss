@@ -1,0 +1,184 @@
+.form-wrapper {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Varela Round', sans-serif; 
+  width: 100%;
+  height: 100vh;
+}
+.forms {
+  width: 385px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 5px;
+  margin: 10px;
+}
+form {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+
+}
+.box {
+  background-color: rgba(148, 143, 171, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+.heading {
+  text-align: center;
+}
+h1 {
+  margin: 10px 10px 5px 10px;
+}
+h1 p {
+  margin-top: 0;
+}
+#fname,
+#lname,
+#mailid,
+#phno
+{
+  margin: 5px;
+  margin-left: 0;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 37px;
+  margin-bottom: 10px;
+}
+#msg{
+  width: 300px;
+  resize: none;
+  margin: 5px;
+  margin-left: 0;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+#submit {
+  background-color: black;
+  width: 150px;
+  height: 47px;
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: larger;
+  cursor: pointer;
+}
+.submitbut {
+  display: flex;
+  justify-content: center;
+}
+.tnc {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  word-spacing: 2px;
+}
+span {
+  color: black;
+}
+.end {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.end p {
+  color: whitesmoke;
+}
+.login {
+  color: purple;
+  text-align: center;
+}
+
+
+
+.navbar{
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  font-size: 20px;
+  display: flex;
+  font-family: 'Varela Round', sans-serif;
+  justify-content: center;
+  margin-top: 0;
+
+  a{
+    color: white;
+    font-size: 20px;
+
+  }
+
+
+  a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: green;
+    transition: width .3s;
+}
+
+  a:hover::after {
+    width: 100%;
+    
+}
+  
+
+  .home{
+      height: 30px;
+      width: 90px;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  .home:hover{
+    font-weight: 1000;
+  }
+
+  .right{
+      display: flex;
+      width: 500px;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-left: 67%;
+
+      .item{
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+
+      }
+
+      .item:hover{
+        font-weight: 1000;
+       
+
+      }
+    
+  }
+}
+
+.name{
+
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .navbar{
+      display: none;
+  }
+
+}

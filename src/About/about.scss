@@ -1,0 +1,17 @@
+.about {
+    display: flex;
+    text-align: center;
+    align-self: center;
+    z-index: 1;
+    color: var(--text-color);
+    font-family: 'Varela Round', sans-serif; 
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+
+
+    .container {
+        text-align: center;
+    }
+}
+
